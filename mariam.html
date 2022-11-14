@@ -1,0 +1,41 @@
+<html>
+    <head>
+        <title>first</title>
+    </head>
+    <body>
+
+       
+
+        <p id="a">Age</p>
+        <button onclick="age()">click here to show age</button>
+
+
+        <p id="hg">Height</p>
+        <button onclick="hg()">click here to show height</button>
+
+        <p id="n">first name</p>
+        <button onclick="n()">click here to show name</button>
+
+        <script>
+            const me = {
+                name: "Mariam",
+                age: "14",
+                height: "171cm"
+            };
+            function n()
+            {
+                document.getElementById("n").innerHTML = me.name ;
+            }
+
+            function age()
+            {
+                document.getElementById("a").innerHTML = me.age;
+            }
+
+            function hg()
+            {
+                document.getElementById("hg").innerHTML = me.height;
+            }
+        </script>
+    </body>
+</html>
